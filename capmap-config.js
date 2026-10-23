@@ -1,0 +1,67 @@
+var alertOptions = {
+    subDirectories: false,  //'meteorology,hydrology' etc.
+    useLocation: false,
+    defaultLanguage: 'en-JM',
+    dateFormat: 'long', // 'vs. ISOString'
+    dateFormatString: 'DD/MMMM/YYYY, HH:mm A', // https://momentjs.com/docs/#/displaying/format/
+    mapTileSource: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', // https://leaflet-extras.github.io/leaflet-providers/preview/
+    zoom: 7,
+    center: [17.99, -77],
+    bounds: {north: 19.5, east: -79.5, south: 16.8, west: -75},
+    attribution: 'Finnish Meteorological Institute',
+    polygonOptions: {
+        fillOpacity: 1,
+        strokeOpacity: 1,
+        strokeWeight: 3,
+	      preventSymbolOverlapping: true,
+    displayActiveFor: true,
+    },
+    dayControl: true,
+    day0Control: true,
+    day1Control: true,
+    day2Control: true,
+    day3Control: true,
+    day4Control: true,
+    useMinorThreat: true,
+    allDayControl: true,
+    extendedDayControl: true,
+    showDayNames: true,
+    dayDateFormat: 'DD.MM',
+    popUpMaxHeight: false, // maximum height in px
+    refresh: 300, // Refresh interval seconds
+    areaLimitForMarkers: 0.005,
+    iconWidth: 30,
+    iconHeight: 30,
+    transparentIcons: false,
+    customIcons: false,
+    customLocations: false,
+    showUpdateTime: true,
+    showIconLegend: true,
+    numberIcons: false,
+    hideOffset: true,
+    timeZone: 'America/Jamaica',
+    eventTypes: {
+        // edit: "edit capmap-config.js",
+        "Flash Flood": "Flash Flood",
+        "flood": "Flood",
+        "tropical storm": "Tropical Storm",
+        "hurricane": "Hurricane",
+        "rainfall": "Rainfall",
+        "landslide": "Landslide",
+        "severe weather": "Severe Weather",
+        "thunderstorm": "Thunderstorm",
+        "small craft": "Large Waves for Small Craft",
+        "strong wind and large wave": "Strong Wind and Large Wave",
+        "high surf": "High Surf",
+        "storm surge": "Storm Surge",
+        "wind": "Wind",
+        "visibility": "Visibility",
+        "temperature": "Temperature",
+        "high humidity": "High Humidity",
+        "aerodrome warning": "Aerodrome Warning",
+        "bush fire": "Bush Fire",
+        "seasonal temperature": "Seasonal Temperature",
+        "seasonal rainfall": "Seasonal Rainfall",
+        "drought": "Drought"
+    }
+};
